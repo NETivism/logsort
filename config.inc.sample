@@ -1,0 +1,16 @@
+<?php
+require_once('utils.inc');
+# =============== config start below ===============
+# config
+$apachelog = '/var/log/apache2/access.log';
+
+# Field
+#
+# Apache log format below
+# LogFormat "%v:%p %{X-Forwarded-For}i %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\""
+# LogFormat "%v:%p %h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\""
+
+$field['vhost'] = 1;
+$field['ip'] = 2;
+$field['referer'] = 4;
+$field['path'] = 8;
