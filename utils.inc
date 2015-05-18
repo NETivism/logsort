@@ -25,4 +25,3 @@ function args(&$argv) {
 }
 
 $args = args($argv);
-$tail = empty($args['tail']) ?  20 : $args['tail'];
